@@ -64,17 +64,16 @@ ul {
   
 }
 
+.header-menu-item:first-child {
+  margin-left: 93px;
+}
 .header-menu-item:not(:first-child) {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
-.header-menu-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
-.header-contact-item:not(:first-child) {
-margin-left: 50px;
+.header-contact-item:first-child {
+margin-right: 50px;
 }
 
 /* Основной блок */
@@ -86,12 +85,8 @@ margin-left: 50px;
   background-color: var(--temporary-bg-color);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  
    
-}
-
-.section1 {
-  background-color: #F5F4FA;
 }
 
 
@@ -154,6 +149,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
 }
 .site-nav-text:hover,
 .site-nav-text:focus {
@@ -216,7 +214,22 @@ body {
 .section {
  
  padding-bottom: 94px;
+ padding-top: 94px;
 }
+
+.section1 {
+  
+  padding-bottom: 94px;
+  
+}
+
+.section2 {
+  background-color: #F5F4FA;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+
 
 .hero-button:hover,
 .hero-button:focus {
@@ -365,7 +378,7 @@ margin-left: 30px;
   line-height: 1.71;
   font-style: normal;
   color: var(--primary-white-color);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -373,7 +386,7 @@ margin-left: 30px;
   line-height: 1.71;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-logo {
@@ -391,8 +404,7 @@ margin-left: 30px;
 
 
 .footer-mail {
-padding-bottom: 9px;
-}
+margin-bottom: 9px;}
 
 .footer-map:hover,
 .footer-map:focus,
@@ -455,6 +467,8 @@ padding-bottom: 9px;
 .works-items {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-bottom: -15px;
 }
 
 .works-img {
